@@ -1,6 +1,4 @@
 Rails.application.routes.draw do
-  resources :users
-  resources :bookings
   resources :bookings do
     collection do
       get 'import_csv_new'
