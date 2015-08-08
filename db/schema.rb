@@ -11,9 +11,10 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150808102609) do
+ActiveRecord::Schema.define(version: 20150808104148) do
 
   create_table "bookings", force: :cascade do |t|
+    t.integer  "user_id"
     t.integer  "price"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
