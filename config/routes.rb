@@ -1,12 +1,7 @@
 Rails.application.routes.draw do
   resources :bookings
   resources :users
-  resources :bookings do
-    collection do
-      get 'import_csv_new'
-      post 'import_csv'
-    end
-  end
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
